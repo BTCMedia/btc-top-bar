@@ -1,0 +1,170 @@
+<style>
+
+.topbar {
+  background-color: #201D1E;
+  position: relative;
+  z-index: 1000;
+}
+
+.btc-bar-container {
+	padding-right: .9375rem;
+	padding-left: .9375rem;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.btc-bar-row {
+    margin-right: -.9375rem;
+    margin-left: -.9375rem;
+    box-sizing: inherit;
+    display: block;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.btc-bar-row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.topbar__link-left {
+  font-family: "Source Sans Pro", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: #FFFFFF;
+  border-right: 1px solid #353535;
+  letter-spacing: 1px;
+  padding: 7px 13px;
+  line-height: 27px;
+}
+.topbar__link-left:last-child {
+  border-right: none;
+}
+.topbar__link-left:focus, .topbar__link-left:hover, .topbar__link-left:active {
+  color: #FFFFFF;
+}
+
+.topbar__link-right {
+  font-family: "Source Sans Pro", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: #FFFFFF;
+  border-left: 1px solid #353535;
+  padding: 7px 13px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  background-color: #201D1E;
+	cursor: pointer;
+}
+.topbar__link-right:focus, .topbar__link-right:hover, .topbar__link-right:active {
+  background-color: #353535;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.topbar__link-left--grey {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.topbar__link-left--grey:hover {
+	  opacity: 1;
+   text-decoration: none;
+}
+
+.channels-menu {
+  position: absolute;
+  top: -200px;
+  text-align: center;
+  right: 0;
+  background-color: #201D1E;
+  opacity: 0;
+  transition: all ease-in-out 0.25s;
+  -webkit-transition: all ease-in-out 0.25s;
+  z-index: -1;
+}
+
+.channels-menu.js-show {
+  opacity: 1;
+  top: 27px;
+}
+
+.channels-menu--item {
+  border-top: 1px solid #353535;
+}
+.channels-menu--item a {
+  display: block;
+  padding: 10px 20px;
+}
+.channels-menu--item a:focus, .channels-menu--item a:hover, .channels-menu--item a:active {
+  background-color: #353535;
+}
+
+
+.nopad {
+	padding: 0;
+}
+
+.right {
+	text-align: right;
+}
+.rel {
+    position: relative;
+}
+
+.nomargin {
+    margin: 0;
+}
+.width-50 {
+	width: 50%;
+	float: left;
+}
+
+@media (max-width: 767px) {
+	.hidden-sm-down {
+	    display: none!important;
+	}
+}
+
+.b-dropdown:hover .channels-menu {
+	  top: 27px;
+  	opacity: 1;
+}
+
+.no-bullets {
+	list-style: none;
+  padding-left: 0;
+}
+
+</style>
+
+
+<div class="topbar">
+	<div class="btc-bar-container">
+		<div class="btc-bar-row">
+
+			<div class="width-50 nopad">
+				<a href="https://btcmedia.org/" class="topbar__link-left topbar__link-left--grey" id="header--about-link">ABOUT</a>
+				<a href="https://www.btcmedia.org" class="topbar__link-left topbar__link-left--grey hidden-sm-down">&copy;2016 BTC Media LLC</a>
+			</div>
+
+			<div class="width-50 nopad right rel">
+
+				<a href="https://bitcoinmagazine.com/about#write" class="topbar__link-right hidden-sm-down" id="header--advertise-link"> ADVERTISE</a><!--
+				--><a href="http://store.bitcoinmagazine.com" class="topbar__link-right hidden-sm-down">STORE</a><!--
+				--><a href="https://bitcoinmagazine.com/about#contact" class="topbar__link-right hidden-sm-down" id="header--contact-link">CONTACT</a><!--
+				--><span href="#" class="topbar__link-right b-dropdown"><span class="hidden-sm-down">BTC</span> CHANNELS  &#9662;
+						<div class="channels-menu">
+							<ul class="b-dropdown-content nomargin no-bullets">
+								<li class="channels-menu--item"><a href="https://bitcoinmagazine.com"><img src="https://fs.bitcoinmagazine.com/img/menu-bitcoin-magazine.png" style="max-height: 15px;" id="header--bm-link"></a></li>
+								<li class="channels-menu--item"><a href="https://godistributed.com"><img src="https://fs.bitcoinmagazine.com/img/menu-distributed.png" style="max-height: 25px;" id="header--dl-link"></a></li>
+								<li class="channels-menu--item" id="header--yb-link"><a href="https://ybitcoin.com" target="_blank"><img src="https://fs.bitcoinmagazine.com/img/menu-ybitcoin.png" style="max-height: 20px;"></a></li>
+							</ul>
+						</div>
+					 </span>
+
+
+			</div>
+
+		</div>
+	</div>
+</div>

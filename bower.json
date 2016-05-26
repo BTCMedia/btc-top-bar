@@ -1,0 +1,17 @@
+{
+  "name": "btc-top-bar",
+  "authors": [
+    "Pat Riley <pat@btcmedia.org>"
+  ],
+  "description": "Sticky top bar for all BTC Media properties",
+  "main": "btc-bar.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
